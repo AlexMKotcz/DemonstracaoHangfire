@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServicoHangfire", "src\ServicoHangfire\ServicoHangfire.csproj", "{D3F14576-5D17-4513-AFE9-B0E03664AFB9}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClienteServico", "ClienteServico\ClienteServico.csproj", "{A090493F-01DB-4E1E-B940-55FC7BA179AF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trabalhador", "src\Trabalhador\Trabalhador.csproj", "{49905970-6B05-4DB0-8F24-D4542D316F9A}"
@@ -15,10 +13,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D3F14576-5D17-4513-AFE9-B0E03664AFB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D3F14576-5D17-4513-AFE9-B0E03664AFB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D3F14576-5D17-4513-AFE9-B0E03664AFB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D3F14576-5D17-4513-AFE9-B0E03664AFB9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A090493F-01DB-4E1E-B940-55FC7BA179AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A090493F-01DB-4E1E-B940-55FC7BA179AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A090493F-01DB-4E1E-B940-55FC7BA179AF}.Release|Any CPU.ActiveCfg = Release|Any CPU

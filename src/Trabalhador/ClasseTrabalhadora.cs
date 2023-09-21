@@ -1,6 +1,6 @@
 ﻿namespace Trabalhador;
 
-public static class Trabalhador
+public static class ClasseTrabalhadora
 {
 	private static int TentativaAtual = 0;
 
