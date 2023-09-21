@@ -5,9 +5,8 @@ namespace ClienteServico.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class ConvecionalController : ControllerBase
+public class ConvencionalController : ControllerBase
 {
-
 	[HttpPost("TrabalhoDemorado")]
 	public void TrabalhoDemorado()
 	{

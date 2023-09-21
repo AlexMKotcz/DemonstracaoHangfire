@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\src\Trabalhador\Trabalhador.csproj" />
+    <ProjectReference Include="..\Trabalhador\Demonstracao.Trabalhador.csproj" />
   </ItemGroup>
 
 </Project>
