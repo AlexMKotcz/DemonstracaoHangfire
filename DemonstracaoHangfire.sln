@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClienteServico", "ClienteSe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trabalhador", "src\Trabalhador\Trabalhador.csproj", "{49905970-6B05-4DB0-8F24-D4542D316F9A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{357DD979-455A-46B7-BA5B-097CF42655C2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +26,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A090493F-01DB-4E1E-B940-55FC7BA179AF} = {357DD979-455A-46B7-BA5B-097CF42655C2}
+		{49905970-6B05-4DB0-8F24-D4542D316F9A} = {357DD979-455A-46B7-BA5B-097CF42655C2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BD6DCADA-20C9-4CF2-A78F-3FBAAB87EFE1}
