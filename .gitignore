@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Alex - Arquivo com string de conexão sensível
+/src/ClienteServico/appsettings.Development.json
