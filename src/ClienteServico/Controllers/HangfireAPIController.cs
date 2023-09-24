@@ -1,3 +1,4 @@
+﻿using Hangfire;
 using Microsoft.AspNetCore.Mvc;
 using Trabalhador;
 
@@ -5,23 +6,23 @@ namespace ClienteServico.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class ConvencionalController : ControllerBase
+public class HangfireAPIController : ControllerBase
 {
 	[HttpPost("TrabalhoDemorado")]
 	public string TrabalhoDemorado()
 	{
-		return ClasseTrabalhadora.TrabalhoDemorado();
+		return BackgroundJob.Enqueue("filademorada", () => ClasseTrabalhadora.TrabalhoDemorado());
 	}
 
 	[HttpPost("TrabalhoComErro")]
 	public string TrabalhoComErro()
 	{
-		return ClasseTrabalhadora.TrabalhoComErro();
+		return BackgroundJob.Enqueue("filadeerros", () => ClasseTrabalhadora.TrabalhoComErro());		
 	}
 
 	[HttpPost("TrabalhoComDificuldades")]
 	public string TrabalhoComDificuldades()
 	{
-		return ClasseTrabalhadora.TrabalhoComDificuldades();
+		return BackgroundJob.Enqueue("filacomdificuldades", () => ClasseTrabalhadora.TrabalhoComDificuldades());
 	}
 }
