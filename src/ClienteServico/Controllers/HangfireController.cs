@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Hangfire;
+using Microsoft.AspNetCore.Mvc;
 using Trabalhador;
 
 namespace ClienteServico.Controllers;
@@ -10,18 +11,18 @@ public class HangfireController : ControllerBase
 	[HttpPost("TrabalhoDemorado")]
 	public void TrabalhoDemorado()
 	{
-		ClasseTrabalhadora.TrabalhoDemorado();
+		BackgroundJob.Enqueue("filademorada", () => ClasseTrabalhadora.TrabalhoDemorado());
 	}
 
 	[HttpPost("TrabalhoComErro")]
 	public void TrabalhoComErro()
 	{
-		ClasseTrabalhadora.TrabalhoComErro();
+		BackgroundJob.Enqueue("filadeerros", () => ClasseTrabalhadora.TrabalhoComErro());		
 	}
 
 	[HttpPost("TrabalhoComDificuldades")]
 	public void TrabalhoComDificuldades()
 	{
-		ClasseTrabalhadora.TrabalhoComDificuldades();
+		BackgroundJob.Enqueue("filacomdificuldades", () => ClasseTrabalhadora.TrabalhoComDificuldades());
 	}
 }
